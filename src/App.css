@@ -1,0 +1,98 @@
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.hero-banner {
+  background: transparent; /* låt bakgrundsgradienten från sidan synas */
+  padding: px 0;         /* halverat från 24px för smalare sektion */
+  text-align: center;
+  border-bottom: none;     /* smälter in bättre */
+}
+
+/* logo-container togs bort från markup, lämnas tom om den finns kvar i CSS */
+.logo-container { }
+
+.banner-logo {
+  display: block;
+  width: 60vw;        /* lite mindre för kompakt header */
+  max-width: 720px;   /* lägre maxbredd */
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* Text bredvid logga används inte längre */
+.banner-logo-text { display: none; }
+
+/* Smooth scrolling för navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Globala knappstilar */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+}
+
+.btn-secondary:hover {
+  background: #1e3a8a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Hover-effekter för kort */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in animationer */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .banner-logo {
+    width: 85vw;
+    max-width: 420px;
+    height: auto;
+  }
+}
