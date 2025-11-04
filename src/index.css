@@ -130,14 +130,15 @@ html {
 
 .nav-link.active,
 .nav-link:hover {
-  background: #ffdd33;
-  border-color: #111827;
+  background: #6e1b1f; /* röd */
+  color: #ffffff;
+  border-color: #6e1b1f;
 }
 
 .nav-cta {
-  background: #ffdd33;
-  border: 2px solid #111827;
-  color: #111827;
+  background: #6e1b1f; /* röd */
+  border: 2px solid #6e1b1f;
+  color: #ffffff;
   font-weight: 800;
   border-radius: 10px;
   padding: 10px 18px;
@@ -178,8 +179,8 @@ html {
 
 .hero-kicker {
   display: inline-block;
-  background: #ffdd33;
-  color: #111827;
+  background: #6e1b1f; /* röd */
+  color: #ffffff;
   font-weight: 900;
   padding: 6px 10px;
   border-radius: 6px;
@@ -208,6 +209,7 @@ html {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 32px;
+  align-items: center;
 }
 
 .muted-panel {
@@ -219,12 +221,21 @@ html {
 }
 
 /* Bilder i tvåkolumnslayouten (t.ex. MPAB-loggan) */
-.two-col > img {
-  width: 100%;
-  height: auto;
-  max-height: 320px;
+.two-col > img { width: 100%; height: auto; display: block; }
+
+/* Om oss specifik styling */
+.about-image {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  max-width: 640px;
+  max-height: 360px;
   object-fit: contain;
-  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 24px rgba(17,24,39,.05);
+}
+
+.about-text {
+  max-width: 640px;
 }
 
 /* Logoremsa för återförsäljare */
@@ -330,6 +341,6 @@ html {
   .hero-content { padding: 48px 16px 32px; }
 
   /* Bild och textbrytning i Om oss */
-  .two-col > img { max-height: 220px; }
+  .about-image { max-height: 220px; }
   .content-section p { overflow-wrap: anywhere; word-break: break-word; }
 }

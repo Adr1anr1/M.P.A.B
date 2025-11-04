@@ -32,47 +32,15 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <h3 className="footer-logo">M.P.A.B.</h3>
-            <p className="footer-tagline">
-              Vi bygger digitala upplevelser som gör skillnad
-            </p>
-            <div className="footer-social">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.url}
-                  className="footer-social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.name}
-                >
-                  <span className="footer-social-icon">{social.icon}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          <div className="footer-links">
-            <h4 className="footer-title">Snabblänkar</h4>
-            <ul className="footer-nav">
-              {footerLinks.map((link, index) => (
-                <li key={index}>
-                  <button 
-                    className="footer-link"
-                    onClick={() => scrollToSection(link.id)}
-                  >
-                    {link.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
           </div>
           
           <div className="footer-contact">
             <h4 className="footer-title">Kontakt</h4>
             <div className="footer-contact-info">
               <p>📧 info@mpab.nu</p>
-              <p>📞 +46 70 123 45 67</p>
-              <p>📍 Stockholm, Sverige</p>
+              <p>📞 Patrik: 070 712 86 26</p>
+              <p>📞 Andrei: 070 060 04 14</p>
+              <p>📍 Karolinagatan 5, 171 58 Solna</p>
             </div>
           </div>
         </div>

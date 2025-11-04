@@ -8,8 +8,9 @@ const ContactPage = () => {
           <h1 className="section-title">Kontakta oss</h1>
           <p>Fyll i formuläret eller kontakta oss direkt via uppgifterna nedan.</p>
           <div className="muted-panel">
-            <p>📞 08-735 7510</p>
-            <p>📍 Råsundavägen 27, 169 67 Solna</p>
+            <p>📞 Patrik: 070 712 86 26</p>
+            <p>📞 Andrei: 070 060 04 14</p>
+            <p>📍 Karolinagatan 5, 171 58 Solna</p>
             <p>⏰ Månd - Fre: 06.30 - 16.00</p>
           </div>
         </div>

@@ -1,12 +1,12 @@
 .footer {
-  background: #1e3a8a;
+  background: #6b7280; /* grå som matchar loggans bakgrund */
   color: #ffffff;
   padding: 4rem 0 2rem;
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr; /* brand + kontakt */
   gap: 3rem;
   margin-bottom: 3rem;
 }
