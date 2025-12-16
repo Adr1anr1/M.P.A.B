@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Home from './Home.jsx';
 import About from './About.jsx';
+import Gallery from './Gallery.jsx';
 import PriceList from './PriceList.jsx';
 import Terms from './Terms.jsx';
 import ContactPage from './ContactPage.jsx';
@@ -28,6 +29,7 @@ const Landing = () => {
     <div>
       {withSection('hem', Home)}
       {withSection('om-oss', About)}
+      {withSection('galleri', Gallery)}
       {withSection('prislista', PriceList)}
       {withSection('hyresvillkor', Terms)}
       {withSection('kontakt', ContactPage)}
