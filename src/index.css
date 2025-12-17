@@ -301,8 +301,9 @@ html {
 }
 
 .tab-btn.active {
-  background: #7d7d53;
+  background: #6e1b1f;
   color: #fff;
+  border-color: #6e1b1f;
 }
 
 .price-grid {
