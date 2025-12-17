@@ -81,7 +81,7 @@ const catalog = {
       ]
     }
   ],
-  'Spikpistol': [
+  'SPIKPISKOL': [
     {
       title: 'Spikpistol',
       items: [
