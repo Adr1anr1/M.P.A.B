@@ -69,7 +69,7 @@ const catalog = {
         ['GOLVSLIP SCAN 45', '470 kr'],
         ['GOLVSLIP SCAN 500', '1050 kr'],
         ['GOLVSLIP SCAN 650', '1550 kr'],
-        ['GOLVSLIP ABS-SLIP', 'Pris saknas']
+        ['GOLVSLIP ABS-SLIP', '110 kr']
       ]
     }
   ],
