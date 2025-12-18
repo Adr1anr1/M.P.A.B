@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setActive(prev => (prev + 2 >= logoCount ? 0 : prev + 2));
-    }, 4500);
+    }, 9000);
     return () => clearInterval(id);
   }, [logoCount]);
 
