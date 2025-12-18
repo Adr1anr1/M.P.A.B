@@ -255,33 +255,53 @@ html {
   max-width: 640px;
 }
 
-/* Logoremsa för återförsäljare */
-.logo-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  align-items: center;
-}
-
-.logo-card {
-  display: grid;
-  place-items: center;
+/* Logotyp-karusell för återförsäljare */
+.logo-carousel-wrapper {
+  overflow: hidden;
   height: 160px;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 20px 22px;
-  transition: transform .15s ease, box-shadow .15s ease;
+  margin-bottom: 16px;
+  position: relative;
 }
 
-.logo-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(17,24,39,.08); }
+.logo-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
 
-.logo-card img {
-  max-height: 110px;
-  max-width: 260px;
-  width: 100%;
+.logo-slide-card {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.logo-slide-card img {
+  max-height: 120px;
+  max-width: 100%;
+  width: auto;
   object-fit: contain;
   filter: none;
+}
+
+/* Öppettider box - kompakt styling */
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.opening-hours h2 {
+  margin-bottom: 16px;
+}
+
+.opening-hours p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Prislista tabs */
@@ -301,9 +321,8 @@ html {
 }
 
 .tab-btn.active {
-  background: #6e1b1f;
+  background: #7d7d53;
   color: #fff;
-  border-color: #6e1b1f;
 }
 
 .price-grid {
@@ -425,8 +444,12 @@ html {
   }
 
   .two-col { grid-template-columns: 1fr; }
-  .logo-strip { grid-template-columns: repeat(1, 1fr); }
   .price-grid { grid-template-columns: 1fr; }
+  
+  /* Logo karusell på mobil - visa 1 åt gången */
+  .logo-carousel-wrapper { height: 140px; }
+  .logo-slide-card { flex: 0 0 100%; padding: 12px; }
+  .logo-slide-card img { max-height: 100px; }
   /* Header/Nav justeringar för mobil */
   .nav-container { padding: 10px 12px; flex-direction: column; align-items: flex-start; gap: 8px; }
   .brand .brand-logo { height: 36px; }
