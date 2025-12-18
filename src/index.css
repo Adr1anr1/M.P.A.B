@@ -313,16 +313,21 @@ html {
 }
 
 .tab-btn {
-  background: #eef0f6;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 18px;
   font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.tab-btn.active {
-  background: #7d7d53;
-  color: #fff;
+.tab-btn.active,
+.tab-btn:hover {
+  background: #6e1b1f;
+  color: #ffffff;
+  border-color: #6e1b1f;
 }
 
 .price-grid {
