@@ -153,6 +153,7 @@ const catalog = {
     {
       title: 'Övrigt',
       items: [
+        ['MINI DUMPER EL', '500 kr'],
         ['BRUKSKÄRRA', '60 kr'],
         ['GIPSHISS', '90 kr'],
         ['PIRRA', '25 kr'],
@@ -215,13 +216,13 @@ const PriceList = () => {
           </button>
         ))}
       </div>
-      <div className="price-grid" style={style}>
+          <div className="price-grid" style={style}>
         {leftGroups.length > 0 && <Col groups={leftGroups} />}
         {rightGroups.length > 0 && <Col groups={rightGroups} />}
         {groups.length === 0 && (
-          <div className="price-list"><p>Inga produkter i denna kategori.</p></div>
-        )}
-      </div>
+              <div className="price-list"><p>Inga produkter i denna kategori.</p></div>
+            )}
+          </div>
     </main>
   );
 };
