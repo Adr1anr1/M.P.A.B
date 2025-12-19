@@ -61,7 +61,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'Kontaktformulär <noreply@mpab.nu>', // Ändra till din verifierade domän
-        to: ['info@mpab.nu'],
+        to: ['maurocamfesab@gmail.com'],
         replyTo: email,
         subject: `Nytt meddelande från ${name}`,
         html: `
