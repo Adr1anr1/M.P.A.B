@@ -304,6 +304,42 @@ html {
   margin: 0;
 }
 
+/* Kontaktformulär styling */
+.contact-form {
+  position: relative;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6e1b1f;
+  box-shadow: 0 0 0 3px rgba(110, 27, 31, 0.1);
+}
+
+.contact-form input:disabled,
+.contact-form textarea:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
 /* Prislista tabs */
 .tabs {
   display: flex;
